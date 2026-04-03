@@ -6,6 +6,8 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 git clone https://github.com/lincheney/fzf-tab-completion.git ~/fzf-tab-completion
 cp ~/.bashrc ~/.bashrc.bk
 cp script/.bashrc ~/.bashrc
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install --all
 cp conf/.vimrc ~/.vimrc
 cp conf/.tmux.conf ~/.tmux.conf
 vim +PlugInstall +qall
