@@ -4,5 +4,6 @@ if [ $# -eq 0 ]; then
 else
     PYTHON_VERSION=$1
 fi
+
 source script/installDocker.sh
 source script/installUvPython.sh $PYTHON_VERSION
