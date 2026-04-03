@@ -123,5 +123,5 @@ export PATH="/root/.local/bin:$PATH"
 eval "$(zoxide init bash)"
 
 if [[ -z "$TMUX" && -n "$PS1" ]]; then
-    exec tmux attach || exec tmux
+    tmux attach || tmux
 fi
