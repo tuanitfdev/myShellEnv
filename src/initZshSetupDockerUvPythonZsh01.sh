@@ -5,6 +5,7 @@ else
     PYTHON_VERSION=$1
 fi
 
-source setupZsh01BashTmuxFzfZoxideFromUbuntu.sh
+source script/setupZsh01BashTmuxFzfZoxideFromUbuntu.sh
 source script/installDocker.sh
 source script/installUvPython.sh $PYTHON_VERSION
+exec bash

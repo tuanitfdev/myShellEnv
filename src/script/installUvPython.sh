@@ -8,5 +8,5 @@ fi
 curl -LsSf https://astral.sh/uv/install.sh | sh
 echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
-exec bash
+export PATH="$HOME/.local/bin:$PATH"
 uv python install $PYTHON_VERSION

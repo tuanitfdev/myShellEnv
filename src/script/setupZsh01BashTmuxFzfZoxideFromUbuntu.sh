@@ -15,4 +15,3 @@ cp conf/.vimrc ~/.vimrc
 cp conf/.tmux.conf ~/.tmux.conf
 vim +PlugInstall +qall
 ~/.tmux/plugins/tpm/bin/install_plugins
-exec zsh
