@@ -123,7 +123,3 @@ export PATH="/root/.local/bin:$PATH"
 eval "$(zoxide init bash)"
 
 exec zsh
-
-if [[ -z "$TMUX" && -n "$PS1" ]]; then
-    tmux attach || tmux
-fi
