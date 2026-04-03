@@ -127,5 +127,5 @@ function gacp() {
 }
 
 if [[ -z "$TMUX" && -n "$PS1" ]]; then
-    exec tmux a -t 0 || exec tmux
+    exec tmux attach || exec tmux
 fi
