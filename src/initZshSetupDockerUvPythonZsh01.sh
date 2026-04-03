@@ -8,5 +8,6 @@ fi
 source script/setupZsh01BashTmuxFzfZoxideFromUbuntu.sh
 source script/installDocker.sh
 source script/installUvPython.sh $PYTHON_VERSION
-exec zsh
 chsh -s $(which zsh)
+exec zsh
+exit
