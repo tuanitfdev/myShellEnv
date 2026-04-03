@@ -1,3 +1,3 @@
 #!/bin/bash
-source script/setupBash01TmuxFzfZoxideFromUbuntu.sh
-exec zsh
+source script/setupZsh01BashTmuxFzfZoxideFromUbuntu.sh
+chsh -s $(which zsh)
