@@ -10,7 +10,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
 cp ~/.zshrc ~/.zshrc.bk
 cp script/.zshrc ~/.zshrc
+cp script/.p10k.zsh ~/.p10k.zsh
 cp conf/.vimrc ~/.vimrc
 cp conf/.tmux.conf ~/.tmux.conf
 vim +PlugInstall +qall
 ~/.tmux/plugins/tpm/bin/install_plugins
+exec zsh
