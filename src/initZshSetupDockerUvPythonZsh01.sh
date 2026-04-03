@@ -10,4 +10,6 @@ source script/installDocker.sh
 source script/installUvPython.sh $PYTHON_VERSION
 chsh -s $(which zsh)
 exec zsh
+exec zsh
+tmux kill-server
 exit
