@@ -18,5 +18,6 @@ if [[ -z "$TMUX" && -n "$PS1" ]]; then
     tmux attach || tmux
 fi
 EOF
-kill -9 -1
+#kill -9 -1
+exec kill -9 $$
 
