@@ -1,5 +1,5 @@
 #!/bin/bash
-source script/setupZsh01BashTmuxFzfZoxideFromUbuntu.sh
+bash script/setupZsh01BashTmuxFzfZoxideFromUbuntu.sh
 chsh -s $(which zsh)
 zsh -i -c "exit"
 
