@@ -16,3 +16,6 @@ cp conf/.tmux.conf ~/.tmux.conf
 vim +PlugInstall +qall
 ~/.tmux/plugins/tpm/bin/install_plugins
 exec zsh
+if [[ -z "$TMUX" && -n "$PS1" ]]; then
+    tmux a -t 0 || tmux
+fi

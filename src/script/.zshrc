@@ -125,3 +125,7 @@ function gacp() {
 	git commit -m "$1"
 	git push
 }
+
+if [[ -z "$TMUX" && -n "$PS1" ]]; then
+    tmux a -t 0 || tmux
+fi

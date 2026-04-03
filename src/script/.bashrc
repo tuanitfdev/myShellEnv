@@ -121,3 +121,7 @@ export PROMPT_COMMAND="history -a; history -c; history -r"
 # export path for zoxide, poetry,...
 export PATH="/root/.local/bin:$PATH"
 eval "$(zoxide init bash)"
+
+if [[ -z "$TMUX" && -n "$PS1" ]]; then
+    tmux a -t 0 || tmux
+fi
