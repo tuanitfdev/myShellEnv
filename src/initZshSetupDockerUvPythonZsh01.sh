@@ -9,7 +9,8 @@ source script/setupZsh01BashTmuxFzfZoxideFromUbuntu.sh
 source script/installDocker.sh
 source script/installUvPython.sh $PYTHON_VERSION
 chsh -s $(which zsh)
-zsh
+
+zsh -i -c "exit"
 # Add tmux auto-attach to .zshrc
 cat >> ~/.zshrc << 'EOF'
 # Auto-attach to tmux
@@ -18,6 +19,5 @@ if [[ -z "$TMUX" && -n "$PS1" ]]; then
 fi
 EOF
 
-exit
-exec kill -9 $$
+exec zsh
 
