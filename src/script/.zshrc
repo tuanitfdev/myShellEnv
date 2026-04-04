@@ -80,7 +80,7 @@ alias rm=' rm'
 
 # Shell integrations
 #eval "$(fzf --zsh)"
-source <(fzf --zsh)
+# source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 #eval "$(zoxide init --cmd cd zsh)"
 
