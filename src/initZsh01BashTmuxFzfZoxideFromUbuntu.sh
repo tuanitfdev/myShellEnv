@@ -1,5 +1,5 @@
 #!/bin/bash
-source initZsh01BashTmuxFzfZoxideFromUbuntu.sh
+bash ./initZsh01BashTmuxFzfZoxideFromUbuntuDocker.sh
 
 # exec kill -9 $$
 kill -9 -1
