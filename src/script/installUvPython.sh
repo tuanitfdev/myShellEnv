@@ -10,3 +10,4 @@ echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
 export PATH="$HOME/.local/bin:$PATH"
 uv python install $PYTHON_VERSION
+
