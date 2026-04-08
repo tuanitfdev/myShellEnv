@@ -1,5 +1,5 @@
 #!/bin/bash
-bash ./script/setupZsh01BashTmuxFzfZoxideFromUbuntu.sh
+bash ./script/setupZsh01ReplaceBashrcTmuxFzfZoxideFromUbuntu.sh
 chsh -s $(which zsh)
 zsh -i -c "exit"
 
@@ -11,3 +11,5 @@ if [[ -z "$TMUX" && -n "$PS1" ]]; then
 fi
 EOF
 
+# exec kill -9 $$
+# kill -9 -1

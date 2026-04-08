@@ -1,0 +1,19 @@
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Keybindings
+set -o emacs
+bind '"\C-p": history-search-backward'
+bind '"\C-n": history-search-forward'
+
+# History
+HISTSIZE=5000
+HISTFILE=~/.bash_history
+HISTFILESIZE=5000
+HISTCONTROL=ignoreboth:erasedups
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r"
+
+# export path for zoxide, poetry,...
+export PATH="/root/.local/bin:$PATH"
+eval "$(zoxide init bash)"
+
