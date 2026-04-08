@@ -7,14 +7,14 @@ git clone https://github.com/lincheney/fzf-tab-completion.git ~/fzf-tab-completi
 cp ~/.bashrc ~/.bashrc.bk
 cp script/.bashrcPart ~/.bashrcPart
 chmod +x ~/.bashrcPart
-# check if .bashrcPart is sourced in .bashrc
-if ! grep -q "source ~/.bashrcPart" ~/.bashrc; then
-    cat >> ~/.bashrc << 'EOF'
-    if [ -f ~/.bashrcPart ]; then
-        source ~/.bashrcPart
-    fi
-EOF
-fi
+# # check if .bashrcPart is sourced in .bashrc
+# if ! grep -q "source ~/.bashrcPart" ~/.bashrc; then
+#     cat >> ~/.bashrc << 'EOF'
+#     if [ -f ~/.bashrcPart ]; then
+#         source ~/.bashrcPart
+#     fi
+# EOF
+# fi
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
 cp ~/.zshrc ~/.zshrc.bk
