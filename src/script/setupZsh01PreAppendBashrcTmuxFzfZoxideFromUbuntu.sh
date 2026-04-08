@@ -24,5 +24,5 @@ cp conf/.vimrc ~/.vimrc
 cp conf/.tmux.conf ~/.tmux.conf
 vim +PlugInstall +qall
 ~/.tmux/plugins/tpm/bin/install_plugins
-zsh -i -c "exit"
+TERM=xterm && zsh -i -c "exit"
 
