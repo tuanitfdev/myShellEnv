@@ -4,3 +4,4 @@ bash ./script/setupDante.sh
 bash ./script/setupSquid.sh
 bash ./script/installDocker.sh
 bash ./script/setupWireguard.sh
+chsh -s $(which zsh)
