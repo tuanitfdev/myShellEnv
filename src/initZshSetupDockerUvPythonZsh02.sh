@@ -5,7 +5,7 @@ else
     PYTHON_VERSION=$1
 fi
 
-bash ./script/setupZsh01BashTmuxFzfZoxideFromUbuntu.sh
+bash ./script/setupZsh01ReplaceBashrcTmuxFzfZoxideFromUbuntu.sh
 bash ./script/installDocker.sh
 bash ./script/installUvPython.sh $PYTHON_VERSION
 chsh -s $(which zsh)
